@@ -21,8 +21,16 @@ This is a simple REST service for managing books, built on the Spring Web MVC fr
 - **DELETE /books/{id}**: Deletes a book with the given ID.
 - **PUT /books**: Updates book details.
 
+## Technical Details:
+- **Java Version**: 11
+- **Packaging**: WAR
+- **Frameworks & Libraries**:
+  - **Spring Web MVC**: 5.1.9.RELEASE
+  - **JUnit**: 3.8.1 (for testing)
+  - **Servlet API**: 4.0.1
+  - **Jackson**: 2.9.0.pr2 (for JSON handling)
+
 ## Technologies and Tools:
 - **Spring Web MVC**: Used to create and manage REST endpoints.
 - **Java**: The programming language in which the application is written.
 - **Maven**: A tool for dependency management and project building.
-
