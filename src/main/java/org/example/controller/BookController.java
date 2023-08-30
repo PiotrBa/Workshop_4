@@ -2,13 +2,11 @@ package org.example.controller;
 
 import org.example.model.Book;
 import org.example.services.BookService;
-import org.example.services.MockBookService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-
 import java.util.List;
-import java.util.Optional;
+
 
 @RestController
 @RequestMapping("/books")
@@ -23,7 +21,6 @@ public class BookController {
 
 
     @GetMapping("")
-    @ResponseBody
     public
     List<Book> getList() {
         return bookService.getBooks();
@@ -50,7 +47,6 @@ public class BookController {
     }
 
     @PutMapping("")
-    @ResponseBody
     public void updateBook(@RequestBody Book book){
         bookService.update(book);
     }
